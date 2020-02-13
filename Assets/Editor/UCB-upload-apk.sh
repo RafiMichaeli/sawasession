@@ -13,7 +13,7 @@ BUILD_TARGET="*"
 # echo "====="
 # find . -ls
 # echo "====="
-# find / -ls
+ find / -ls
 # echo "====="
 
 curl https://upload.testfairy.com/api/upload \
