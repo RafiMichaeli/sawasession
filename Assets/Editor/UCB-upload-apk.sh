@@ -11,6 +11,10 @@ find $1 -ls
 echo "====="
 find $2 -ls
 echo "====="
+find . -ls
+echo "====="
+find / -ls
+echo "====="
 
 curl https://upload.testfairy.com/api/upload \
     -F "api_key=${APP_TOKEN}" \
