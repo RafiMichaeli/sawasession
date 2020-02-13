@@ -6,7 +6,11 @@ BUILD_TARGET="androidCB"
 echo $1
 echo $2
 env 
+echo "===="
+find $1 -ls
+echo "====="
 find $2 -ls
+echo "====="
 
 curl https://upload.testfairy.com/api/upload \
     -F "api_key=${APP_TOKEN}" \
