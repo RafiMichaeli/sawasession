@@ -18,7 +18,7 @@ BUILD_TARGET="*"
 
 curl https://upload.testfairy.com/api/upload \
     -F "api_key=${APP_TOKEN}" \
-    -F "apk=@$2/${BUILD_TARGET}.apk" \
+    -F "ipa=@$2/${BUILD_TARGET}.apk" \
 #   -F testers_groups='' \
 #   -F notify='on'
 #   -F release_notes='testing connection to upload api'
