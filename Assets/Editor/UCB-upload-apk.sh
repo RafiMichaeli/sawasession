@@ -1,17 +1,5 @@
 #!/bin/bash -x
 
-echo "========"
-pwd
-find . -ls
-echo "======"
-find .. -ls
-ls -la .
-ls -la ..
-env
-set
-uptime
-echo "====="
-
 APP_TOKEN='2b7c2001126cbbfb221535b6e0d3728f2bf5d9f3'
 BUILD_TARGET="*"
 
@@ -26,9 +14,9 @@ $(npm bin)/firebase --version
 #brew install jq
 #curl -X GET -H "Content-Type: application/json"  -H "Authorization: Basic 946d7ecb0c817c4f2c166fba0ec0fe84" "https://build-api.cloud.unity3d.com/api/v1/orgs/testfairy/projects/sawsessions/buildtargets/default-ios/builds?per_page=1&page=1" | jq
 
-#curl https://upload.testfairy.com/api/upload \
-#    -F "api_key=${APP_TOKEN}" \
-#    -F "ipa=@$2/${BUILD_TARGET}.apk" \
+curl -v https://upload.testfairy.com/api/upload \
+    -F "api_key=${APP_TOKEN}" \
+    -F "ipa=@/BUILD_PATH/testfairy.sawsessions.default-ios/.build/last/default-ios/build.ipa"
 #   -F testers_groups='' \
 #   -F notify='on'
 #   -F release_notes='testing connection to upload api'
