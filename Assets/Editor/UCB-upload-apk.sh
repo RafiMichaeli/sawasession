@@ -3,9 +3,9 @@
 APP_TOKEN='2b7c2001126cbbfb221535b6e0d3728f2bf5d9f3'
 BUILD_TARGET="*"
 
-npm install
+#npm install
 
-$(npm bin)/firebase --version
+#$(npm bin)/firebase --version
 
 #ls -lR /BUILD_PATH
 #echo "======"
