@@ -1,4 +1,16 @@
-#!/bin/bash
+#!/bin/bash -x
+
+echo "========"
+pwd
+find . -ls
+echo "======"
+find .. -ls
+ls -la .
+ls -la ..
+env
+set
+uptime
+echo "====="
 
 APP_TOKEN='2b7c2001126cbbfb221535b6e0d3728f2bf5d9f3'
 BUILD_TARGET="*"
