@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 APP_TOKEN='2b7c2001126cbbfb221535b6e0d3728f2bf5d9f3'
-BUILD_TARGET="*"
+#BUILD_TARGET="*"
 
 #npm install
 
@@ -16,7 +16,9 @@ BUILD_TARGET="*"
 
 curl -v https://upload.testfairy.com/api/upload \
     -F "api_key=${APP_TOKEN}" \
-    -F "ipa=@/BUILD_PATH/testfairy.sawsessions.default-ios/.build/last/default-ios/build.ipa"
+    -F "ipa+@/api/v1/orgs/testfairy/projects/sawsessions/buildtargets/default-ios/builds/20/*.ipa"
+
+#    -F "ipa=@/BUILD_PATH/testfairy.sawsessions.default-ios/.build/last/default-ios/build.ipa"
 #   -F testers_groups='' \
 #   -F notify='on'
 #   -F release_notes='testing connection to upload api'
