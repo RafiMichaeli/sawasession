@@ -7,4 +7,4 @@ env
 
 curl -v https://upload.testfairy.com/api/upload \
     -F "api_key=${APP_TOKEN}" \
-    -F "file=@$WORKSPACE/.build/last/default-android/build.apk"
+    -F "file=@$WORKSPACE/.build/last/default-android/Default Android.apk"
