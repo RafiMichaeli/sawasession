@@ -8,7 +8,6 @@ curl -v https://upload.testfairy.com/api/upload \
     -F "api_key=${APP_TOKEN}" \
     -F "file=@$WORKSPACE/.build/last/default-ios/build.ipa"
 
-
 #   -F "ipa=@/BUILD_PATH/testfairy.sawsessions.default-ios/.build/last/default-ios/build.ipa"
 #   -F testers_groups='' \
 #   -F notify='on'
