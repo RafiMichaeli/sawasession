@@ -2,9 +2,9 @@
 
 APP_TOKEN='2b7c2001126cbbfb221535b6e0d3728f2bf5d9f3'
 
-env
+# env
 
-find $WORKSPACE/.build
+# find $WORKSPACE/.build
 
 curl -v https://upload.testfairy.com/api/upload \
     -F "api_key=${APP_TOKEN}" \
