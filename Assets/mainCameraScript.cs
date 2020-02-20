@@ -9,8 +9,11 @@ public class mainCameraScript : MonoBehaviour
     void Start()
     {
        TestFairy.begin("cc38070ec3d9684a91879a2ec0e8a21fc67b36ed");
+       TestFairy.setUserId("UnityUser-test");
     }
-
+    void OnLevelWasLoaded(int level) {
+        TestFairy.setScreenName(Application.loadedLevelName);
+    }
     // Update is called once per frame
     void Update()
     {
